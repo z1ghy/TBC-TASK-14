@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+html, body {
+    
+    
+    background-color: $backgroundColor;
+    
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    
+
+}
+
+
+    nav {
+        @include goFlex (row,flex-start,center);
+        margin-top: 10px;
+        margin-left: 137px;
+        margin-bottom: 40px;
+
+
+
+#li {
+    font-size: $navFontSize;
+    line-height: 12.89px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 35px ;
+    color: $primaryColor;
+
+}
+
+.burger-menu  {
+    display: none;
+    height: 30px;
+
+
+    @media (max-width:400px) {
+
+        @include goFlex(column,space-around,center)
+
+    }
+
+    div {
+    width: 30px;
+    height: 5px;
+    background-color: $primaryColor;
+    border-radius: 5px ;
+}
+
+}
+
+
+}
+
+
+
+@media (max-width:518px) {
+
+  nav {  margin-left: 15px; }
+
+}
+
+@media (max-width:400px) {
+            
+    nav {
+        @include goFlex (row,space-between,center,nowrap);
+        margin: 0px;
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+
+   #nav-ul {
+    display: none;
+   }
+
+}
+
+
+
+.trading {
+    font-family: "Roboto", sans-serif ;
+    font-size: $mainFontSize;
+    font-weight: 700;
+    line-height: 28.13px;
+    margin-left: 137px;
+    margin-bottom: 27px ;
+    color: $primaryColor;
+
+
+   
+        @media (max-width:1000px) {
+            @include goFlex (column,flex-start,center,wrap,center);
+            margin-left: 0px;
+        }
+        
+        
+
+}
+
+
+
+
+.content-section1 {
+    @include goFlex (row,flex-start,center,nowrap);
+    margin-bottom: 57px ;
+    width: 100vw;
+
+    @media (max-width:1500px) {
+    @include goFlex (row,space-around,center,wrap);
+    }
+
+    @media (max-width:518px) {
+        @include goFlex (column,flex-start,stretch,wrap,center);
+        }
+
+        
+
+
+
+
+
+
+.content1 {
+    background-color: $contentTextColor;
+    border-radius: 10px;
+    height: 357px;
+    width: 362px;
+    position: relative;
+    margin-left: 138px;
+
+    @media (max-width: 1000px) {
+        margin-left: 0px;
+        
+    }
+
+
+    h2 {
+        position: absolute;
+        top: 32px ;
+        left: 41px;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23.44px;
+        color: $contentTextColor;
+    
+    }
+    
+}
+
+
+
+
+
+.content1 .bg-img {
+    
+    
+    width: 100%;
+    
+    
+
+}
+
+.content1 
+
+div {
+    height: 170px;
+    padding-top: 68px;
+    padding-left: 37px;
+}    
+
+
+p {
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: $contentFontSize;
+    font-weight: 700;
+    line-height: 11.72px;
+    color: $secondaryColor;
+}
+
+
+
+
+
+
+div span {
+    color: $secondaryColor;
+    
+   
+    
+}
+
+
+
+.content1 .clock-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 11px ;
+    
+}
+
+}
+
+
+    
+
+.h2 {
+    font-family: "Roboto", sans-serif ;
+    font-size: $mainFontSize;
+    font-weight: 800;
+    line-height: 28.13px;
+    margin-left: 137px;
+    margin-bottom: 30px ;
+    color: $primaryColor;
+
+    @media (max-width:1317px) {
+        @include goFlex (column,flex-start,center,wrap,center);
+        margin-left: 0px;
+    }
+
+
+
+}
+
+
+.bridge-nature {
+    position: relative;
+    margin-left: 138px;
+    display: inline-block;
+    margin-right: 45px;
+    margin-bottom: 36px ;
+
+    @media (max-width:1317px) {
+        margin-left: unset;
+        margin-right: unset;
+        width: auto;
+    }
+
+    img {
+        @media (max-width:$mobile-version) {
+        width: 435px ;
+        }
+
+    }
+
+    
+    
+
+
+}
+
+section h3 {
+    position: absolute;
+    top: 203px;
+    left: 278px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    color: $contentTextColor;
+
+    @media (max-width:$mobile-version) {
+        top: 127px;
+        left: 117px;
+    }
+    
+}
+
+.photos-flex-box {
+    @include goFlex (row,flex-start,stretch,wrap);
+    @media (max-width:1317px) {
+        @include goFlex (column,space-around,center,wrap,center);
+        
+    }
+
+    .forest-elephant-city {
+        @include goFlex (column,space-around,space-between,wrap); 
+        @media (max-width:1317px) {
+            @include goFlex (row,space-around,stretch,wrap,flex-start);
+            gap: 10px; 
+        }
+
+        @include goFlex (column,space-around,space-between,wrap); 
+        @media (max-width:748px) {
+            @include goFlex (column,space-around,flex-start,wrap,flex-start);
+        }
+
+        img {
+            margin-bottom: 86px;
+        }
+    
+    }  
+}
+
+
+
+
+
+
+
+.footer-box  {
+    width: auto;
+    height: 201px;
+    background: #243043;
+    position: relative;
+    @include goFlex (row,flex-start,stretch,nowrap)
+
+}
+
+
+.footer-box {
+    @media (max-width:620px) {
+    @include goFlex (row,flex-start,stretch,wrap);
+    height: 100%;
+    }
+}
+
+
+
+
+.list3-margin-right {
+    margin-right: 300px;
+ }
+
+
+.footer-list {
+    font-family: "Roboto", sans-serif ;
+    font-size: $footFontSize;
+    font-weight: 700;
+    line-height: 14.06px;
+    color: $secondaryColor;
+    margin-top: 59px;
+    margin-left: 137px;
+
+    li {
+        line-height: 30px ;
+     }
+
+     @media (max-width:400px) {
+        @include goFlex (column,center,center,wrap,center);
+     }
+
+}
+
+
+
+
+li {
+   line-height: 30px ;
+}
+
+
+.footer-box {
+ p {
+    font-family: "Roboto", sans-serif ;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    color: white;
+    @include goFlex (row,center,center,wrap,center);
+
+
+   
+
+    @media (max-width:1200px) {
+        position: absolute;
+        top: 10px;
+        left: 220px;
+    }
+
+    @media (max-width:620px) {
+        position: absolute;
+        top: 10px;
+        left: 130px;
+
+    }
+
+    @media (max-width:400px) {
+        position: absolute;
+        top: 10px;
+        left: 120px;
+        width: 100px;
+        
+    }
+    
+}
+
+
+.foot-logo {
+    position: absolute;
+    top: 58px;
+    right: 138px;
+    @media (max-width:1780px) {
+        top: 10px;
+        left: 20px;
+        right: 0px;
+        
+       
+    }
+}
+
+
+}
+
+
+
